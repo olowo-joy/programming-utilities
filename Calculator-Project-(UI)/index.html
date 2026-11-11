@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kid-Friendly Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Opening Page -->
+  <div id="openingScreen">
+    <div id="welcomeBox">
+      <img src="images/math.gif" alt="School themed background" id="welcomeImage" />
+      <h1 id="typingTitle"></h1>
+      <p class="welcomeText">Welcome! Tap below to start practicing math.</p>
+      <button type="button" id="startBtn">Start Calculator</button>
+    </div>
+  </div>
+
+  <!-- Calculator Page -->
+  <div id="calculatorScreen" style="display: none;">
+    <h1 style="margin: 8px 0;">Kid-Friendly Calculator</h1>
+    <p style="margin: 4px 0 10px 0;">Tap or click buttons to practice math.</p>
+
+    <table border="1" cellpadding="10" cellspacing="0" align="center">
+      <tr>
+        <!-- Main calculator -->
+        <td valign="top">
+          <fieldset>
+            <legend><strong>Display</strong></legend>
+            <p style="color: blue; margin: 0 0 5px 0;">
+              Now: <strong id="currentOpDisplay">Waiting...</strong>
+            </p>
+            <p style="margin: 4px 0;">Expression: <strong id="expression"></strong></p>
+            <p style="margin: 4px 0;">Answer: <strong id="answer" style="font-size: 1.3em;"></strong></p>
+            <p id="confettiContainer" style="margin: 6px 0 0 0;">
+              <img id="confetti" src="images/confetti.gif" alt="Confetti celebration" />
+            </p>
+          </fieldset>
+
+          <!-- Keypad Grid -->
+          <table border="1" cellpadding="8" cellspacing="4" width="100%" style="text-align: center; margin-top: 8px;">
+            <tr>
+              <td><button type="button" style="width:100%;">C</button></td>
+              <td><button type="button" style="width:100%;">⌫</button></td>
+              <td><button type="button" style="width:100%;">(</button></td>
+              <td><button type="button" style="width:100%;">)</button></td>
+            </tr>
+            <tr>
+              <td><button type="button" style="width:100%;">7</button></td>
+              <td><button type="button" style="width:100%;">8</button></td>
+              <td><button type="button" style="width:100%;">9</button></td>
+              <td><button type="button" style="width:100%;">÷</button></td>
+            </tr>
+            <tr>
+              <td><button type="button" style="width:100%;">4</button></td>
+              <td><button type="button" style="width:100%;">5</button></td>
+              <td><button type="button" style="width:100%;">6</button></td>
+              <td><button type="button" style="width:100%;">×</button></td>
+            </tr>
+            <tr>
+              <td><button type="button" style="width:100%;">1</button></td>
+              <td><button type="button" style="width:100%;">2</button></td>
+              <td><button type="button" style="width:100%;">3</button></td>
+              <td><button type="button" style="width:100%;">−</button></td>
+            </tr>
+            <tr>
+              <td><button type="button" style="width:100%;">0</button></td>
+              <td><button type="button" style="width:100%;">.</button></td>
+              <td><button type="button" style="width:100%;">=</button></td>
+              <td><button type="button" style="width:100%;">+</button></td>
+            </tr>
+          </table>
+
+          <p style="text-align: center; margin: 8px 0 0 0;">
+            <button type="button" style="padding: 10px 14px;">Clear Current</button>
+          </p>
+        </td>
+
+        <!-- History -->
+        <td valign="top" bgcolor="#f9f9f9">
+          <h2 style="margin-bottom: 6px;">History (Last 5)</h2>
+          <hr style="margin: 4px 0 8px 0;" />
+          <ul id="historyList" style="line-height: 1.5; margin: 0;"></ul>
+          <button type="button" style="width: 100%; padding: 10px 14px;">Clear History</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <audio id="confettiSound" src="audio/yay.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
