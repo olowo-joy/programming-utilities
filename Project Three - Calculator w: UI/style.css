@@ -1,0 +1,143 @@
+body {
+  font-family: sans-serif;
+  background: #f4f8ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr 300px;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  gap: 15px;
+  padding: 15px;
+}
+
+.header {
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #2a5bd7;
+}
+
+#selectedOp {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff7a00;
+}
+
+.menu {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu h2 {
+  margin-top: 0;
+  color: #2a5bd7;
+}
+
+.menu button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #e3ecff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu button:hover {
+  background: #d0ddff;
+}
+
+.calculator {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.calculator h2 {
+  margin-top: 0;
+  color: #2a5bd7;
+}
+
+fieldset {
+  border: 2px solid #aac4ff;
+  border-radius: 10px;
+  padding: 15px;
+  background: #f7faff;
+}
+
+#expression, #answer {
+  font-size: 1.4rem;
+  padding: 8px;
+  background: #eef3ff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.calculator table button {
+  width: 60px;
+  height: 60px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: #e3ecff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.calculator table button:hover {
+  background: #d0ddff;
+}
+
+.calculator table button:active {
+  background: #b8caff;
+}
+
+.history {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.history h2 {
+  margin-top: 0;
+  color: #2a5bd7;
+}
+
+.history ol {
+  padding-left: 20px;
+}
+
+.history button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #ffe0cc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.history button:hover {
+  background: #ffd1b3;
+}
