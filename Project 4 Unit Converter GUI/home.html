@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversion Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content-area">
+        <div class="header-container">
+            <h1>Unit Conversion Quiz</h1>
+        </div>
+        <div class="main-box">
+            <div>
+                <h2>Practice Imperial and Metric Conversions</h2>
+                <p>Select a mode, choose how many questions you want, and start the quiz.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h1>Settings</h1>
+        <div class="small-box">
+            <div class="unit-controls">
+                <label for="unit-mode">Mode</label>
+                <select id="unit-mode">
+                    <option value="imperial">Imperial → Metric</option>
+                    <option value="metric">Metric → Imperial</option>
+                </select>
+            </div>
+
+            <div class="question-selector">
+                <span>Question #</span>
+                <input id="question-count" type="number" value="5" min="1" max="5">
+            </div>
+            
+            <button class="start-btn">Start</button>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
